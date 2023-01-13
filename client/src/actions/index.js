@@ -6,7 +6,7 @@ import axios from 'axios';
 //getDogs deja de ser una función y se vuelve un generador de acciones
 export function getDogs() {
     return async function (dispatch) {
-        let json = await axios.get("http://localhost:3001/dogs");
+        let json = await axios.get("/dogs");
         return dispatch({
             type: "GET_DOGS",
             payload: json.data
@@ -16,7 +16,7 @@ export function getDogs() {
 //El dispatch pasa la acción a la store que la maneja con ayuda de los reducers
 export function getTemperaments() {
     return async function (dispatch) {
-        let json = await axios.get("http://localhost:3001/temperaments");
+        let json = await axios.get("/temperaments");
         return dispatch({
             type: "GET_TEMPS",
             payload: json.data
@@ -26,7 +26,7 @@ export function getTemperaments() {
 
 export function postNewDog(payload) {
     return async function (dispatch) {
-        const response = await axios.post("http://localhost:3001/dogs", payload);
+        const response = await axios.post("/dogs", payload);
         return {
             type: "POST_DOG"
         }
@@ -35,7 +35,7 @@ export function postNewDog(payload) {
 
 export function deleteDog(id){
     return async function (dispatch) {
-        const response = await axios.delete(`http://localhost:3001/dogs/${id}`);
+        const response = await axios.delete(`/dogs/${id}`);
         return {
             type: "DELETE_DOG"
         }
@@ -73,7 +73,7 @@ export function orderDogsByAlphabetic(payload) {
 export function getDogName(name) {
     return async function (dispatch) {
         try {
-            let json = await axios.get("http://localhost:3001/dogs?name=" + name);
+            let json = await axios.get("/dogs?name=" + name);
             return dispatch({
                 type: "GET_DOG_NAME",
                 payload: json.data
@@ -90,7 +90,7 @@ export function getDogName(name) {
 export function getDogId(id) {
     return async function (dispatch) {
         try {
-            let json = await axios.get(`http://localhost:3001/dogs/${id}`);
+            let json = await axios.get(`/dogs/${id}`);
             return dispatch({
                 type: "GET_DOG_ID",
                 payload: json.data

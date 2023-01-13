@@ -1,0 +1,28 @@
+.weightOrder{
+    display: flex;
+    flex-direction: column;
+}
+.weightOrder *{
+    animation: slide 0.6s forwards;
+}
+@keyframes slide{
+    from{
+        width: 0vw;
+    }
+    to{
+        width: normal;
+    }
+}
+.orderWeightTitle{
+    margin-bottom: 1vh;
+    margin-top: 0;
+    font-family: "monocraft";
+    font-weight: 100;
+}
+.selectWeight{
+    width: 120px;
+    height: 25px;
+    margin: 0;
+    font-family: "monocraft";
+    font-weight: 100;
+}

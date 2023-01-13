@@ -1,0 +1,80 @@
+.dogImg{
+    width: auto;
+    height: auto;
+    max-width: 25vw;
+    max-height: 40vh;
+    border-radius: 2vw;
+}
+.createdTitle {
+    margin: 0 0 5vh 0;
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+}
+.dogCreated {
+    grid-area: DogCreated;
+    width: 40vw;
+    height: auto;
+    margin: 5vh 0vw;
+    padding: 5vh 0;
+    border-radius: 2vw;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+    font-weight: 100;
+}
+.tempsArea{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+.tempLabel{
+    display: flex;
+    flex-direction: row;
+}
+.tempName{
+    margin-right: 0.5vw;
+}
+.buttonLabel{
+    width: 1.5vw;
+    height: 3.2vh;
+    border-radius: 50%;
+    background-color: rgba(233, 4, 4, 1);
+    color: white;
+    border: 1px rgb(255, 255, 255) solid;
+    justify-content: center;
+    cursor: pointer;
+}
+.backArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton {
+    background-image: url("../icons/DogHome.png");
+    background-color: rgb(255, 255, 255);
+    background-size: 4vw 9vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 6vw;
+    height: 12vh;
+    margin: 0 0 5vh 1vw;
+}
+
+.backButton:hover {
+    transform: scale(1.2);
+}
+
+.backTitle {
+    margin: 2vh 0.5vw 1vh 0;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+    margin: 0 1vw 5vh 1vw;
+    font-weight: 100;
+}

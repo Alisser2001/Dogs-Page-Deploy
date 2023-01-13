@@ -1,0 +1,14 @@
+.filterButtons{
+    width: 35vw;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px rgb(255, 255, 255) solid;
+    border-top-left-radius: -2vw;
+    padding-left: 3vw;
+    font-family: "monocraft";
+    font-weight: 100;
+    font-size: 1vw;
+}

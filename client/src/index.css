@@ -1,0 +1,26 @@
+body {
+  background-image: url("./img/8.webp");
+  background-size: 100vw 150vh;
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  background-color: transparent;
+}
+body::-webkit-scrollbar:vertical {
+  width: 1vw;
+}
+body::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+  display: none;
+} 
+body::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, .2);
+  margin: 1vw;
+}
+
+

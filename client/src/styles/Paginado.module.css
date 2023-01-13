@@ -1,0 +1,33 @@
+.paginado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 5vh;
+    text-align: center;
+    margin: 1vh 0vw;
+}
+.paginado>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 2vh 0vw;
+    font-size: 1vw;
+    font-family: "monocraft";
+}
+.paginado>ul>li{
+    padding: 0 5px;
+}
+.paginado>ul>li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.currentPage{
+    margin: 0 2vw;
+    font-size: 1.3vw;
+}
+.navButtons{
+    text-decoration: none;
+    color: white;
+    font-family: "monocraft";
+}

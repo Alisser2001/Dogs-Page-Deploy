@@ -1,0 +1,71 @@
+.options{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.createButton{
+    background-image: url("../icons/AddDog.png");
+    background-size: 5vw 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7vw;
+    height: 14vh;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 255, 255);
+}
+.createButton:hover{
+    transform: scale(1.2);
+}
+.researchButton{
+    background-image: url("../icons/dogIcon.png");
+    background-size: 5vw 11vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8vw;
+    height: 16vh;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 255, 255);
+}
+.researchButton:hover{
+    transform: scale(1.2);
+}
+.filterButton{
+    background-image: url("../icons/FilterDog.png");
+    background-size: 3.5vw 8vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7vw;
+    height: 14vh;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 255, 255);
+    z-index: 300;
+}
+.filterButton:hover{
+    transform: scale(1.2);
+}
+.filterOptions{
+    width: 80vw;
+    height: 14.3vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 16vw;
+    margin-top: -15vh;
+    animation: slideFilter 0.5s backwards;
+}
+.filterOptions>div{
+    animation: slideFilter 0.5s backwards;
+}
+@keyframes slideFilter{
+    from{
+        width: 0vw;
+    }
+    to{
+        width: 75vw;
+    }
+}

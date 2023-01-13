@@ -1,0 +1,78 @@
+.form {
+    grid-area: CreateDog;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Form"
+        "CreateButton";
+    width: 40vw;
+    margin: 5vh 0vw;
+    padding: 5vh 0;
+    border-radius: 2vw;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+    font-weight: 100;
+}
+.form>div>h3 {
+    margin: 1vh 0;
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+    font-weight: 100;
+}
+.inputArea {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    font-family: "monocraft";
+    font-weight: 100;
+}
+.createArea {
+    grid-area: CreateButton;
+    width: 100%;
+    margin: 4vh 0 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.createButton {
+    background-image: url("../icons/AddDog.png");
+    background-color: rgb(255, 255, 255);
+    background-size: 4vw 9vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 6vw;
+    height: 12vh;
+    margin: 0 0 5vh 1vw;
+    cursor: pointer;
+}
+.createButton:hover {
+    transform: scale(1.2);
+}
+.createTitle {
+    margin: 2vh 0.5vw 1vh 0;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+    margin: 0 1vw 5vh 1vw;
+    font-weight: 100;
+}
+.title {
+    margin: 0 0 5vh 0;
+    color: rgb(255, 255, 255);
+    font-family: "monocraft";
+}

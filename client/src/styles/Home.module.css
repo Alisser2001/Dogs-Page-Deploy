@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.home{
+    width: 96vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 2vw;
+    color: rgb(255, 255, 255);
+    background-position-y: 9vh;
+    overflow-x: hidden;
+    height: 143vh;
+}
+.titleArea{
+    display: grid;
+    grid-template-columns: 31% 37% 31%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family: "monocraft";
+    font-size: 0.8vw;
+}
+.dogsTitle{
+    margin: 4vh 0 0 0;
+    font-size: 2.5vw;
+}
+.dogsArea{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    overflow: hidden;
+    margin-top: 5vh;
+    border-radius: 2vw;
+    height: 120vh;
+}
+.eachDog{
+    display: flex;
+    justify-content: center;
+}
+.notDogsArea{
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    justify-content: center;
+    align-items: center;
+}
+.notDogsImg{
+    width: 25vw;
+    height: 51vh;
+    max-width: 25vw;
+    max-height: 51vh;
+    border-radius: 50%;
+    border: 5px #1f1f1f solid;
+}
+.notDogsTitle{
+    font-family: "monocraft";
+}

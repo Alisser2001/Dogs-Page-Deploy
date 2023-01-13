@@ -1,0 +1,31 @@
+.alfabeticOrder {
+    display: flex;
+    flex-direction: column;
+}
+
+.alfabeticOrder *{
+    animation: slide 0.6s forwards;
+}
+@keyframes slide{
+    from{
+        width: 0vw;
+    }
+    to{
+        width: normal;
+    }
+}
+
+.orderAlphTitle {
+    margin-bottom: 1vh;
+    margin-top: 0;
+    font-family: "monocraft";
+    font-weight: 100;
+}
+
+.selectAlph {
+    width: 120px;
+    height: 25px;
+    margin: 0px;
+    font-family: "monocraft";
+    font-weight: 100;
+}

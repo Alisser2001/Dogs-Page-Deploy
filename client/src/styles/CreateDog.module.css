@@ -1,0 +1,62 @@
+.createDog {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "CreateDog DogCreated";
+    justify-items: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.createDog::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.createDog::-webkit-scrollbar-track-piece {
+    background-color: white;
+}
+
+.createDog::-webkit-scrollbar:vertical {
+    width: 1vw;
+}
+
+.createDog::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+.createDog::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.createDog::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    margin: 1vw;
+}
+
+.createDog::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.tempList {
+    list-style: none
+}
+
+.createdArea{
+    grid-area: CreateDog;
+    justify-content: center;
+    align-items: center;
+}
+.createdImg{
+    width: 25vw;
+    height: 51vh;
+    max-width: 25vw;
+    max-height: 51vh;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, .5) solid;
+    margin-bottom: 5vh;
+}

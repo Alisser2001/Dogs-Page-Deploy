@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.page{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    overflow: hidden;
+}
+.title{
+    margin: -15vh 0vw 0vh 5vw;
+    justify-content: flex-end;
+    grid-column: 3;
+    grid-row: 2;
+    font-family: 'Abril Fatface';
+    font-size: 7vw;
+    position: absolute;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.buttonInit{
+    background-image: url("../img/6.webp");
+    background-size: 7vw 14vh;
+    width: 7vw;
+    height: 14vh;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    grid-column: 3;
+    grid-row: 2;
+    position: absolute;
+    margin: 12vh 0vw 0vh 22vw;
+}
+.buttonInit:hover{
+    transform: scale(1.2);
+}
+.footer{
+    font-family: "monocraft";
+    position: absolute;
+    margin: 95vh 0 0 1vw;
+    font-size: 1.5vw;
+    color: white;
+}

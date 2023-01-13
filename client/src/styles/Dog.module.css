@@ -1,0 +1,68 @@
+.dog{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 37vh;
+    border: 1px solid #1b1c1e;
+    margin: 5px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    animation: slide 1s forwards;
+}
+@keyframes slide{
+    from{
+        top: 100vh;
+    } to{
+        top: 0;
+    }
+}
+.dog:hover>.dogImg{
+    opacity: 25%;
+    transform: scale(1.1);
+}
+.dog:hover>.info{
+    position: absolute;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dogName{
+    position: relative;
+    display: flex;
+    width: 18vw;
+    font-size: 1.5vw;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin: 48vh 0vw 0vh 0vw;
+    z-index: 100;
+    font-family: "monocraft";
+}
+.dogImg{
+    width: 16vw;
+    height: 33vh;
+    max-width: 16vw;
+    max-height: 33vh;
+    border-radius: 50%;
+    position: absolute;
+}
+.info{
+    display: none;
+}
+.dogTemp{
+    display: flex;
+    font-size: 1.1vw;
+    font-family: "monocraft";
+    color: rgb(255, 255, 255);
+}
+.dogWeight{
+    display: flex;
+    font-size: 1vw;
+    font-family: "monocraft";
+    color: rgb(255, 255, 255);
+}

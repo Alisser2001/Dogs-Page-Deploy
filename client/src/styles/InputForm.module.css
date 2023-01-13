@@ -1,0 +1,17 @@
+.inputArea {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    font-family: "monocraft";
+    font-weight: 100;
+}

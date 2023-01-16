@@ -63,8 +63,8 @@
 
     .title {
         grid-column: 1;
-        grid-row: 1;
-        margin: 0;
+        grid-row: 0;
+        margin: 0vw 0vh;
         justify-content: center;
         font-family: 'Abril Fatface';
         font-size: 9vw;
@@ -74,8 +74,8 @@
 
     .buttonInit {
         grid-column: 1;
-        grid-row: 2;
-        margin: 0;
+        grid-row: 1;
+        margin: 0vw vh;
         width: 80px;
         height: 130px;
         background-size: 80px 130px;
@@ -87,7 +87,7 @@
 
     .footer {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
         font-size: 3vw;
     }
 }

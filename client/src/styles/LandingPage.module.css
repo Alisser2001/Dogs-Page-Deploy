@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-.page{
+.page {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -11,7 +11,8 @@
     position: relative;
     overflow: hidden;
 }
-.title{
+
+.title {
     margin: -15vh 0vw 0vh 5vw;
     justify-content: flex-end;
     grid-column: 3;
@@ -21,7 +22,8 @@
     position: absolute;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
-.buttonInit{
+
+.buttonInit {
     background-image: url("../img/6.webp");
     background-size: 7vw 14vh;
     background-repeat: no-repeat;
@@ -34,10 +36,12 @@
     position: absolute;
     margin: 12vh 0vw 0vh 22vw;
 }
-.buttonInit:hover{
+
+.buttonInit:hover {
     transform: scale(1.2);
 }
-.footer{
+
+.footer {
     font-family: "monocraft";
     position: absolute;
     margin: 95vh 0 0 1vw;
@@ -45,8 +49,8 @@
     color: white;
 }
 
-@media (max-width: 720px){
-    .page{
+@media (max-width: 720px) {
+    .page {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 33% 33% 33%;
@@ -54,20 +58,35 @@
         overflow: hidden;
         height: 100vh;
         width: 100vw;
+        margin: 0;
 
     }
-    .title{
+
+    .title {
         grid-column: 2;
-        grid-row: 2;
-        margin: 0 15vw 0 0;
+        grid-row: 1;
+        margin: 0;
+        justify-content: center;
+        font-family: 'Abril Fatface';
+        font-size: 9vw;
+        position: absolute;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
-    .buttonInit{
-        grid-column: 3;
+
+    .buttonInit {
+        grid-column: 2;
         grid-row: 2;
         margin: 0;
         width: 80px;
+        height: 140px;
+        background-size: 80px 140px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 1px rgb(0, 0, 0) solid;
+        position: absolute;
     }
-    .footer{
+
+    .footer {
         font-size: 3vw;
     }
 }

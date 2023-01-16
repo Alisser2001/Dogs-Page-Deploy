@@ -53,9 +53,8 @@
     .page {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        justify-items: center;
         overflow: hidden;
         height: 100vh;
         width: 100vw;
@@ -72,7 +71,7 @@
     }
 
     .buttonInit {
-        margin: 0vw 0vh;
+        margin: 0vw 45vh;
         width: 80px;
         height: 130px;
         background-size: 80px 130px;
@@ -84,6 +83,6 @@
 
     .footer {
         font-size: 5vw;
-        margin: 45vh 0 0 0;
+        margin: 0vw 0vh;
     }
 }

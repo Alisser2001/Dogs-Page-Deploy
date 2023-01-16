@@ -23,6 +23,7 @@
 .dog:hover>.dogImg{
     position: absolute;
     transform: scale(1.1);
+    opacity: 0.25;
 }
 .dog:hover>.info{
     position: absolute;

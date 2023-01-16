@@ -1,6 +1,6 @@
 @font-face{
   font-family: monocraft;
-  src: url(./fonts/minecraft_font.ttf) format('truetype');
+  src: url('./fonts/minecraft_font.ttf') format('truetype');
 }
 
 body {

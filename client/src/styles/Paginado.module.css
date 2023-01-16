@@ -7,7 +7,7 @@
     text-align: center;
     margin: 1vh 0vw;
 }
-.paginado>ul{
+.listPag{
     display: flex;
     flex-direction: row;
     list-style: none;

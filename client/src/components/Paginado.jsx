@@ -27,7 +27,7 @@ export default function Paginado({ allDogs, dogsPage, paginado, currentPage }) {
 
     return (
         <nav className={styles.paginado}>
-            <ul>
+            <ul className={styles.listPag}>
                 {pageNumbers && <><a onClick={(e) => handlePreviousPage(e)} href=" " className={styles.navButtons}>Prev</a>
                     <li className={styles.currentPage}>{currentPage}</li>
                     <a onClick={(e) => handleNextPage(e)} href=" " className={styles.navButtons}>Next</a></>}

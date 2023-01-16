@@ -57,3 +57,9 @@
 .notDogsTitle{
     font-family: "monocraft";
 }
+
+@media (max-width: 720px){
+    .dogsArea{
+        overflow-y: scroll;
+    }
+}

@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family: monocraft;
   src: url('./fonts/minecraft_font.ttf') format('truetype');
   src: url('./fonts/Monocraft.otf') format('truetype');
@@ -11,23 +11,37 @@ body {
   padding: 0;
   font-family: monocraft;
 }
+
+@media (max-width: 720px) {
+  body {
+    background-image: url("./img/8.webp");
+    background-size: 100vw 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: monocraft;
+  }
+}
+
 body::-webkit-scrollbar {
   background-color: transparent;
 }
+
 body::-webkit-scrollbar:vertical {
   width: 1vw;
 }
-body::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+
+body::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
   display: none;
-} 
+}
+
 body::-webkit-scrollbar:horizontal {
   height: 10px;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, .8);
   border-radius: 20px;
   border: 2px solid rgba(0, 0, 0, .2);
   margin: 1vw;
 }
-
-

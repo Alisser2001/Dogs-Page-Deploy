@@ -27,7 +27,7 @@
 }
 .dogsArea{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
     grid-template-rows: auto;
     overflow: hidden;
     margin-top: 5vh;

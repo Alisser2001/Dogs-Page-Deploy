@@ -62,7 +62,7 @@
     }
 
     .title {
-        margin: 0vw 0vh;
+        margin: 0vh 0vw;
         justify-content: center;
         font-family: 'Abril Fatface';
         font-size: 9vw;
@@ -71,7 +71,7 @@
     }
 
     .buttonInit {
-        margin: 0vw 45vh;
+        margin: 45vh 0vw;
         width: 80px;
         height: 130px;
         background-size: 80px 130px;
@@ -83,6 +83,6 @@
 
     .footer {
         font-size: 5vw;
-        margin: 0vw 0vh;
+        margin: 0vh 0vw;
     }
 }

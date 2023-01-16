@@ -55,11 +55,15 @@
     .title{
         grid-column: 2;
         grid-row: 2;
-        margin: 0;
+        margin: 0 5vw 0 0;
     }
     .buttonInit{
         grid-column: 3;
         grid-row: 2;
         margin: 0;
+        width: 350px;
+    }
+    .footer{
+        font-size: 3vw;
     }
 }

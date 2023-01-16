@@ -62,10 +62,10 @@
     }
 
     .title {
-        margin: 0vh 0vw 30vh 0vw;
+        margin: 0vh 0vw 50vh 0vw;
         justify-content: center;
         font-family: 'Abril Fatface';
-        font-size: 9vw;
+        font-size: 13vw;
         position: absolute;
         -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
@@ -83,6 +83,6 @@
 
     .footer {
         font-size: 5vw;
-        margin: 40vh 0vw 2vh 0vw;
+        margin: 90vh 0vw 2vh 0vw;
     }
 }

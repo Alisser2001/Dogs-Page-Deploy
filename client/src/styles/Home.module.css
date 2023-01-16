@@ -27,14 +27,13 @@
 }
 .dogsArea{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 328px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 320px));
     grid-template-rows: auto;
     overflow: hidden;
     margin-top: 5vh;
     border-radius: 2vw;
     height: 120vh;
     justify-content: center;
-    align-items: center;
 }
 .eachDog{
     display: flex;

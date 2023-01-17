@@ -248,12 +248,12 @@
     .deletedButton{
         background-image: url("../icons/DeletedDog.png");
         background-color: rgb(255, 255, 255);
-        background-size: 30px 45px;
+        background-size: 100px 150px;
         background-position: center;
         background-repeat: no-repeat;
         background-position-y: 1vh;
-        width: 40px;
-        height: 60px;
+        width: 120px;
+        height: 180px;
     }
     .deletedBack{
         background-image: url("../icons/DogHome.png");
@@ -263,6 +263,5 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 80px;
-        margin: 8vh 0vw 2vh 12vw;
     }
 }

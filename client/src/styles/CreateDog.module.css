@@ -63,6 +63,6 @@
 @media (max-width: 720px){
     .createDog{
         width: 600px;
-        overflow-x: hidden;
+        overflow-x: scroll;
     }
 }

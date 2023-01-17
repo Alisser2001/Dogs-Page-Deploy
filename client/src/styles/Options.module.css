@@ -69,6 +69,14 @@
         width: 75vw;
     }
 }
+@keyframes slideFilterResponsive{
+    from{
+        height: 0vw;
+    }
+    to{
+        height: 20vh;
+    }
+}
 
 @media (max-width: 720px){
     .createButton{
@@ -116,15 +124,15 @@
     }
     .filterOptions{
         width: auto;
-        height: 14.3vh;
+        height:20vh;
         display: flex;
         flex-direction: row;
         position: absolute;
         margin-top: 5vh;
-        animation: slideFilter 0.5s backwards;
+        animation: slideFilterResponsive 0.5s forwards;
         z-index: 1000;
     }
     .filterOptions>div{
-        animation: slideFilter 0.5s backwards;
+        animation: slideFilterResponsive 0.5s forwards;
     }
 }

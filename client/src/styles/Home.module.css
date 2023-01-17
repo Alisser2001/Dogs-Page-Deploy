@@ -81,6 +81,6 @@
         flex-direction: column;
         width: 250px;
         justify-content: center;
-        margin: -25vh 0vw 0vh -20vw;
+        overflow-x: hidden;
     }
 }

@@ -181,13 +181,13 @@
 @media (max-width: 720px){
     .dogInfo{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto;
         grid-template-rows: 30% 20% 10% 10% 20% 10%;
         grid-template-areas: 
-        "img img"
-        "info info"
-        "info info"
-        "info info"
+        "img"
+        "info"
+        "info"
+        "info"
         "backButton deleteButton"
         "backTitle deleteTitle";
         justify-content: center;

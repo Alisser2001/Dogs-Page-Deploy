@@ -60,3 +60,8 @@
     border: 1px rgba(0, 0, 0, .5) solid;
     margin-bottom: 5vh;
 }
+@media (max-width: 720px){
+    .createDog{
+        display: flex;
+    }
+}

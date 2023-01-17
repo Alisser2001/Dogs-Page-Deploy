@@ -76,3 +76,9 @@
     color: rgb(255, 255, 255);
     font-family: "monocraft";
 }
+
+@media (max-width: 720px){
+    .form{
+        width: 350px;
+    }
+}

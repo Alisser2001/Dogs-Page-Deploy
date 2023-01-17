@@ -242,7 +242,7 @@
         font-size: 3vw;
         margin: 0vh 0vw;
     }
-    .confimationButtons{
-        font-size: 6vw;
+    .confimationButtons>button{
+        font-size: 3vw;
     }
 }

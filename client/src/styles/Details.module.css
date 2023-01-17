@@ -219,7 +219,7 @@
         background-size: 50px 70px;
         background-position: center;
         background-repeat: no-repeat;
-        margin: 8vh 0vw 0vh 12vw;
+        margin: 8vh 0vw 2vh 12vw;
     }
     .deleteTitle{
         grid-area: deleteTitle;
@@ -235,11 +235,14 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 80px;
-        margin: 8vh 0vw 0vh 12vw;
+        margin: 8vh 0vw 2vh 12vw;
     }
     .backTitle{
         grid-area: backTitle;
         font-size: 3vw;
         margin: 0vh 0vw;
+    }
+    .confimationButtons{
+        font-size: 3vw;
     }
 }

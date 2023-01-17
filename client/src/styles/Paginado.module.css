@@ -38,7 +38,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 92;
+        width: auto;
         height: 5vh;
         text-align: center;
         margin: 1vh 0vw;

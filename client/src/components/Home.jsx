@@ -58,7 +58,9 @@ export default function Home() {
                             </div>
                         )
                     }) :
-                    <Error404 msg="The Dogs Has Not Been Found" back={false} className={styles.notDogsArea}/>}
+                    <div className={styles.notDogsArea}>
+                        <Error404 msg="The Dogs Has Not Been Found" back={false}/>
+                    </div>}
             </div>
             <Paginado dogsPage={dogsPage} allDogs={allDogs.length} paginado={paginado} currentPage={currentPage}/>
         </div>

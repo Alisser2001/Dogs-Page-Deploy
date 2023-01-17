@@ -54,3 +54,26 @@
     margin: 0 1vw 5vh 1vw;
     font-weight: 100;
 }
+@media (max-width: 720px){
+    .errImg {
+        width: 250px;
+        height: 350px;
+        max-width: 250px;
+        max-height: 350px;
+    }
+    .backButton {
+        background-image: url("../icons/DogHome.png");
+        background-color: rgb(255, 255, 255);
+        background-size: 50px 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 1px rgb(0, 0, 0) solid;
+        width: 70px;
+        height: 100px;
+        margin: 0 0 5vh 1vw;
+    }
+    .backTitle {
+        font-size: 4vw;
+    }
+}

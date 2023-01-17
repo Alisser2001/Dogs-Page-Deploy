@@ -199,39 +199,42 @@
         grid-area: img;
         width: auto;
         height: auto;
-        max-width: 310px;
+        max-width: 312px;
         max-height: 200px;
         border-radius: 2vw;
     }
     .dogThings>h2{
-        font-size: 6vw;
+        font-size: 4vw;
+        width: 312px;
     }
     .deleteButton{
         grid-area: deleteButton;
         width: 60px;
-        height: 90px;
+        height: 80px;
         background-image: url(../icons/DeleteDog.png);
         background-color: rgb(207, 16, 16);
-        background-size: 50px 75px;
+        background-size: 50px 70px;
         background-position: center;
         background-repeat: no-repeat;
     }
     .deleteTitle{
         grid-area: deleteTitle;
         font-size: 3vw;
+        margin: 0vh 0vw;
     }
     .backButton{
         grid-area: backButton;
         background-image: url("../icons/DogHome.png");
         background-color: rgb(255, 255, 255);
-        background-size: 50px 75px;
+        background-size: 50px 70px;
         background-position: center;
         background-repeat: no-repeat;
         width: 60px;
-        height: 90px;
+        height: 80px;
     }
     .backTitle{
         grid-area: backTitle;
         font-size: 3vw;
+        margin: 0vh 0vw;
     }
 }

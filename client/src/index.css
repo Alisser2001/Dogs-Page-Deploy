@@ -6,7 +6,7 @@
 
 body {
   background-image: url("./img/8.webp");
-  background-size: 120vw 150vh;
+  background-size: 100vw 150vh;
   margin: 0;
   padding: 0;
   font-family: monocraft;
@@ -15,7 +15,7 @@ body {
 @media (max-width: 720px) {
   body {
     background-image: url("./img/8.webp");
-    background-size: 100vw 100vh;
+    background-size: 120vw 100vh;
     margin: 0;
     padding: 0;
     font-family: monocraft;

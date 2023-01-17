@@ -69,3 +69,49 @@
         width: 75vw;
     }
 }
+
+@media (max-width: 720px){
+    .createButton{
+        background-image: url("../icons/AddDog.png");
+        background-size: 50px 75px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70px;
+        height: 105px;
+        border-radius: 50%;
+        border: 1px rgb(0, 0, 0) solid;
+        background-color: rgb(255, 255, 255);
+    }
+    .createButton:hover{
+        transform: scale(1.2);
+    }
+    .researchButton{
+        background-image: url("../icons/dogIcon.png");
+        background-size: 50px 75px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 80px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px rgb(0, 0, 0) solid;
+        background-color: rgb(255, 255, 255);
+    }
+    .researchButton:hover{
+        transform: scale(1.2);
+    }
+    .filterButton{
+        background-image: url("../icons/FilterDog.png");
+        background-size: 35px 54px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70px;
+        height: 105px;
+        border-radius: 50%;
+        border: 1px rgb(0, 0, 0) solid;
+        background-color: rgb(255, 255, 255);
+        z-index: 300;
+    }
+    .filterButton:hover{
+        transform: scale(1.2);
+    }
+}

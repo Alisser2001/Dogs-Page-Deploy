@@ -124,7 +124,7 @@
     }
     .filterOptions{
         width: auto;
-        height:40vh;
+        height: 40vh;
         display: flex;
         flex-direction: row;
         position: absolute;

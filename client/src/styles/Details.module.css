@@ -193,14 +193,18 @@
         justify-content: center;
         align-items: center;
         place-items: center stretch;
+        margin: 0vh 2vw;
     }
     .dogImg{
         grid-area: img;
         width: auto;
         height: auto;
-        max-width: 300px;
-        max-height: 150px;
+        max-width: 310px;
+        max-height: 200px;
         border-radius: 2vw;
+    }
+    .dogThings>h2{
+        font-size: 6vw;
     }
     .deleteButton{
         grid-area: deleteButton;

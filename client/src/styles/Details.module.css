@@ -181,13 +181,13 @@
 @media (max-width: 720px){
     .dogInfo{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 30% 20% 10% 10% 20% 10%;
         grid-template-areas: 
-        "img"
-        "info"
-        "info"
-        "info"
+        "img img"
+        "info info"
+        "info info"
+        "info info"
         "backButton deleteButton"
         "backTitle deleteTitle";
         justify-content: center;
@@ -198,8 +198,36 @@
         grid-area: img;
         width: auto;
         height: auto;
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 300px;
+        max-height: 150px;
         border-radius: 2vw;
+    }
+    .deleteButton{
+        grid-area: deleteButton;
+        width: 60px;
+        height: 90px;
+        background-image: url(../icons/DeleteDog.png);
+        background-color: rgb(207, 16, 16);
+        background-size: 50px 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .deleteTitle{
+        grid-area: deleteTitle;
+        font-size: 3vw;
+    }
+    .backButton{
+        grid-area: backButton;
+        background-image: url("../icons/DogHome.png");
+        background-color: rgb(255, 255, 255);
+        background-size: 50px 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 90px;
+    }
+    .backTitle{
+        grid-area: backTitle;
+        font-size: 3vw;
     }
 }

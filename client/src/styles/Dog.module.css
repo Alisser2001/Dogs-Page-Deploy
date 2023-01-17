@@ -75,7 +75,7 @@
     .dogName{
         position: absolute;
         display: flex;
-        width: 30vw;
+        width: 100%;
         font-size: 5vw;
         justify-content: center;
         margin: 45vh 0vw 0vh 0vw;

@@ -87,4 +87,12 @@
         max-width: 220px;
         max-height: 330px;
     }
+    .dogTemp{
+        display: flex;
+        font-size: 1.5vw;
+    }
+    .dogWeight{
+        display: flex;
+        font-size: 1.3vw;
+    }
 }

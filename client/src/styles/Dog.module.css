@@ -67,3 +67,24 @@
     font-family: "monocraft";
     color: rgb(255, 255, 255);
 }
+@media (max-width: 720px){
+    .dog{
+        width: 250px;
+        height: 375px;
+    }
+    .dogName{
+        position: absolute;
+        display: flex;
+        width: 18vw;
+        font-size: 3vw;
+        justify-content: center;
+        margin: 0vh 0vw 0vh 0vw;
+        z-index: 100;
+    }
+    .dogImg{
+        width: 220px;
+        height: 330px;
+        max-width: 220px;
+        max-height: 330px;
+    }
+}

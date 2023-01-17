@@ -203,6 +203,9 @@
         max-height: 200px;
         border-radius: 2vw;
     }
+    .dogThings{
+        margin: 5vh 0vw 2vh 0vw;
+    }
     .dogThings>h2{
         font-size: 4vw;
         width: 312px;
@@ -231,6 +234,7 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 80px;
+        margin: 5vh 0vw 0vh 5vw;
     }
     .backTitle{
         grid-area: backTitle;

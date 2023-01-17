@@ -46,17 +46,6 @@
     justify-content: center;
     align-items: center;
 }
-.notDogsImg{
-    width: 25vw;
-    height: 51vh;
-    max-width: 25vw;
-    max-height: 51vh;
-    border-radius: 50%;
-    border: 5px #1f1f1f solid;
-}
-.notDogsTitle{
-    font-family: "monocraft";
-}
 
 @media (max-width: 720px){
     .home{
@@ -93,16 +82,5 @@
         width: auto;
         justify-content: flex-start;
         align-items: center;
-    }
-    .notDogsImg{
-        width: 25vw;
-        height: 51vh;
-        max-width: 25vw;
-        max-height: 51vh;
-        border-radius: 50%;
-        border: 5px #1f1f1f solid;
-    }
-    .notDogsTitle{
-        font-family: "monocraft";
     }
 }

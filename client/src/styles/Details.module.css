@@ -182,13 +182,14 @@
     .dogInfo{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 5% 15%;
         grid-template-areas: 
         "img img"
         "info info"
         "info info"
         "info info"
-        "back delete";
+        "backTitle deleteTitle"
+        "backButton deleteButton";
         justify-content: center;
         align-items: center;
     }

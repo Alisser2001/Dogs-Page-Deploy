@@ -37,7 +37,7 @@
 
 @media (max-width: 720px) {
     .textInput {
-        margin: 0vh 1vw;
+        margin: 0vh 1vw 0vh 0vw;
         height: 4vh;
         width: 70%;
         border-radius: 5vw;

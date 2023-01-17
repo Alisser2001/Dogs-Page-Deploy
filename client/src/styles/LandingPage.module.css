@@ -73,8 +73,8 @@
     .buttonInit {
         margin: 50vh 0vw 0vh 0vw;
         width: 80px;
-        height: 130px;
-        background-size: 80px 130px;
+        height: 120px;
+        background-size: 80px 120px;
         background-repeat: no-repeat;
         border-radius: 50%;
         border: 1px rgb(0, 0, 0) solid;

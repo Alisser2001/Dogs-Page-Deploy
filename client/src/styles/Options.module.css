@@ -118,9 +118,9 @@
         width: auto;
         height: 14.3vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        margin-top: 15vh;
+        margin-top: 5vh;
         animation: slideFilter 0.5s backwards;
         z-index: 1000;
     }

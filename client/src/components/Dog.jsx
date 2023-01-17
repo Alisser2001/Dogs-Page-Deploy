@@ -9,8 +9,9 @@ export default function Dog({ name, temperament, minWeight, maxWeight, image, id
                 to={`/home/${id}`}
                 style={{
                     textDecoration: "none"
-                }}>
-                <h1 className={styles.dogName}>{name}</h1>
+                }}
+                className={styles.dogName}>
+                {name}
             </Link>
             <img src={image} className={styles.dogImg} />
             <div className={styles.info}>

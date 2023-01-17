@@ -76,9 +76,9 @@
         position: absolute;
         display: flex;
         width: 30vw;
-        font-size: 6vw;
+        font-size: 5vw;
         justify-content: center;
-        margin: 35vh 0vw 0vh 0vw;
+        margin: 45vh 0vw 0vh 0vw;
         z-index: 100;
     }
     .dogImg{

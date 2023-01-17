@@ -15,8 +15,8 @@ body {
 @media (max-width: 720px) {
   body {
     background-image: url("./img/8.webp");
-    background-size: 150vw 100vh;
-    background-position-x: -15vw;
+    background-size: 160vw 100vh;
+    background-position-x: -25vw;
     margin: 0;
     padding: 0;
     font-family: monocraft;

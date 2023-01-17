@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     width: 96vw;
     height: 9vh;
     background-color: #1f1f1f;
@@ -9,14 +9,16 @@
     justify-content: center;
     align-items: center;
 }
-.textInput{
+
+.textInput {
     margin: 0vh 1vw;
     height: 4vh;
     border-radius: 5vw;
     padding: 0 2vw 0 1vw;
     font-family: "monocraft";
 }
-.submitInput{
+
+.submitInput {
     margin: 0vh 2vw 0 0;
     border-radius: 50%;
     background-image: url("../icons/SearchDog.png");
@@ -28,6 +30,30 @@
     height: 7vh;
     cursor: pointer;
 }
-.submitInput:hover{
+
+.submitInput:hover {
     transform: scale(0.8);
+}
+
+@media (max-width: 720px) {
+    .textInput {
+        margin: 0vh 1vw;
+        height: 4vh;
+        width: 80%;
+        border-radius: 5vw;
+        padding: 0 2vw 0 1vw;
+        font-family: "monocraft";
+    }
+    .submitInput {
+        margin: 0vh 2vw 0 0;
+        border-radius: 50%;
+        background-image: url("../icons/SearchDog.png");
+        background-size: 350px;
+        background-repeat: no-repeat;
+        background-position: 0.4vw 0.6vh;
+        background-color: #1f1f2f;
+        width: 350px;
+        height: 350px;
+        cursor: pointer;
+    }
 }

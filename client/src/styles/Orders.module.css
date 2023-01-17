@@ -15,6 +15,7 @@
 @media (max-width: 720px){
     .orderButtons{
         width: 100%;
+        height: auto;
         background-color: #1f1f1f;
         display: flex;
         flex-direction: column;

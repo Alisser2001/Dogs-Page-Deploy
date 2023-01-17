@@ -1,4 +1,4 @@
-.filterButtons{
+.filterButtons {
     width: 35vw;
     background-color: #1f1f1f;
     display: flex;
@@ -12,14 +12,18 @@
     font-weight: 100;
     font-size: 1vw;
 }
-@media (max-width: 720px){
-    .filterButtons{
+
+@media (max-width: 720px) {
+    .filterButtons {
         width: 100%;
+        height: auto;
         background-color: #1f1f1f;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-top-left-radius: 2vw;
+        border-bottom-left-radius: 2vw;
         font-family: "monocraft";
         font-weight: 100;
         font-size: 3vw;

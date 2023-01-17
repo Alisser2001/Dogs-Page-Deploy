@@ -184,10 +184,10 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 20% 20% 20% 20% 20%;
         grid-template-areas: 
-        "img img"
+        "img"
+        "info"
         "info info"
-        "info info"
-        "info info"
+        "info"
         "back delete";
         justify-content: center;
         align-items: center;

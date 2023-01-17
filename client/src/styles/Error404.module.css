@@ -76,4 +76,7 @@
     .backTitle {
         font-size: 4vw;
     }
+    .backArea{
+        margin-top: 10vh;
+    }
 }

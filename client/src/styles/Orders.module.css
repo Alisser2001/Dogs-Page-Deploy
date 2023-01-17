@@ -1,4 +1,4 @@
-.orderButtons{
+.orderButtons {
     width: 35vw;
     background-color: #1f1f1f;
     display: flex;
@@ -12,8 +12,9 @@
     font-weight: 100;
     font-size: 1vw;
 }
-@media (max-width: 720px){
-    .orderButtons{
+
+@media (max-width: 720px) {
+    .orderButtons {
         width: 100%;
         height: auto;
         background-color: #1f1f1f;
@@ -21,8 +22,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
         font-family: "monocraft";
         font-weight: 100;
         font-size: 3vw;
+        padding-left: 5px;
     }
 }

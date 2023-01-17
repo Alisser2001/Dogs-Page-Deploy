@@ -70,7 +70,7 @@
 @media (max-width: 720px){
     .dog{
         width: 250px;
-        height: 375px;
+        height: 350px;
     }
     .dogName{
         position: absolute;
@@ -78,14 +78,14 @@
         width: 18vw;
         font-size: 3vw;
         justify-content: center;
-        margin: 0vh 0vw 0vh 0vw;
+        margin: -20vh 10vw 0vh 0vw;
         z-index: 100;
     }
     .dogImg{
         width: 220px;
-        height: 330px;
+        height: 310px;
         max-width: 220px;
-        max-height: 330px;
+        max-height: 310px;
     }
     .dogTemp{
         display: flex;

@@ -79,7 +79,7 @@
     .notDogsArea{
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 250px;
         justify-content: flex-start;
         align-items: center;
         margin: -15vh 0vw 0vh -10vw;

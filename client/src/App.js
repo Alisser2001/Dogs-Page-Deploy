@@ -7,7 +7,7 @@ import Details from './components/Details';
 import Error404 from './components/Error404';
 import axios from "axios";
 
-axios.defaults.baseURL = "https://dogs-page-deploy-production.up.railway.app/";
+axios.defaults.baseURL = "https://dogs-page-deploy-production.up.railway.ap/";
 
 function App() {
   return (

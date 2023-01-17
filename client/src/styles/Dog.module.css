@@ -78,7 +78,7 @@
         width: 18vw;
         font-size: 4vw;
         justify-content: center;
-        margin: -20vh 10vw 0vh 0vw;
+        margin: -20vh 0vw 0vh -10vw;
         z-index: 100;
     }
     .dogImg{
@@ -93,6 +93,6 @@
     }
     .dogWeight{
         display: flex;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 }

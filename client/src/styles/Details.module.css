@@ -219,6 +219,7 @@
         background-size: 50px 70px;
         background-position: center;
         background-repeat: no-repeat;
+        margin: 8vh 0vw 0vh 10vw;
     }
     .deleteTitle{
         grid-area: deleteTitle;
@@ -234,7 +235,7 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 80px;
-        margin: 5vh 0vw 0vh 5vw;
+        margin: 8vh 0vw 0vh 10vw;
     }
     .backTitle{
         grid-area: backTitle;

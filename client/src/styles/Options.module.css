@@ -128,7 +128,7 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        margin: 0vh 0vw 0vh 20vw;
+        margin: -20vh 0vw 0vh 30vw;
         animation: slideFilterResponsive 0.5s forwards;
         z-index: 1000;
     }

@@ -74,6 +74,6 @@
         flex-direction: column;
         width: 350px;
         justify-content: center;
-        overflow-x: hidden;
+        margin-left: -10vw;
     }
 }

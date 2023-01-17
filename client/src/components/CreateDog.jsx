@@ -39,6 +39,8 @@ export default function CreateDog() {
         setTempsNewDog(tempsSlice)
     }
 
+    console.log(window.innerWidth);
+
     return (
         <div className={styles.createDog}>
             {created && <div className={styles.createdArea}>

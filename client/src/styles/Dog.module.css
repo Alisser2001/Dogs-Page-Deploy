@@ -76,7 +76,7 @@
         position: absolute;
         display: flex;
         width: 18vw;
-        font-size: 3vw;
+        font-size: 4vw;
         justify-content: center;
         margin: -20vh 10vw 0vh 0vw;
         z-index: 100;
@@ -89,10 +89,10 @@
     }
     .dogTemp{
         display: flex;
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     .dogWeight{
         display: flex;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
     }
 }

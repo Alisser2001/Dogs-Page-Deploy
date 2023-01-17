@@ -79,7 +79,5 @@
     font-weight: 100;
 }
 @media (max-width: 720px){
-    .dogCreated{
-        display: none;
-    }
+    
 }

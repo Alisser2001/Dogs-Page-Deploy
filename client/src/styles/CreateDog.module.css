@@ -62,6 +62,7 @@
 }
 @media (max-width: 720px){
     .createDog{
-        display: flex;
+        width: 600px;
+        overflow-x: hidden;
     }
 }

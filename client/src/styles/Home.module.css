@@ -71,6 +71,9 @@
         overflow: hidden;
         height: 95vh;
     }
+    .titleArea{
+        font-size: 2vw;
+    }
     .dogsTitle{
         margin: 2vh 0 0 0;
         font-size: 4vw;

@@ -33,3 +33,28 @@
     color: white;
     font-family: "monocraft";
 }
+@media (max-width: 720px){
+    .paginado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 96vw;
+        height: 5vh;
+        text-align: center;
+        margin: 1vh 0vw;
+    }
+    .listPag{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 2vh 0vw;
+        font-size: 3vw;
+        font-family: "monocraft";
+        justify-content: center;
+        padding-inline-start: 0;
+    }
+    .currentPage{
+        margin: 0 2vw;
+        font-size: 4vw;
+    }
+}

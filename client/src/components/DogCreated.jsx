@@ -15,10 +15,7 @@ export default function Dog({
     setViewCreated,
     handleDeleteTemp
 }) {
-    const handle=(e)=>{
-        e.preventDefault();
-        return setViewCreated("form");
-    }
+    const handle=(e)=>setViewCreated("form");
     return (
         <div className={styles.dogCreated}>
             <h1 className={styles.createdTitle}>Dog Created:</h1>

@@ -6,6 +6,7 @@ import styles from "../styles/CreateDog.module.css";
 import DogCreated from "./DogCreated";
 import createdDogs from "../img/6.webp";
 import Form from "./Form";
+import CreateDogResponsive from "./CreateDogResponsive";
 
 export default function CreateDog() {
     const dispatch = useDispatch();
@@ -33,38 +34,48 @@ export default function CreateDog() {
         }
     }
 
-    const handleDeleteTemp = (e) =>{
+    const handleDeleteTemp = (e) => {
         e.preventDefault();
-        let tempsSlice = tempsNewDog.filter(el=>el!==e.target.value);
+        let tempsSlice = tempsNewDog.filter(el => el !== e.target.value);
         setTempsNewDog(tempsSlice)
     }
 
-    console.log(window.innerWidth);
+
 
     return (
-        <div className={styles.createDog}>
-            {created && <div className={styles.createdArea}>
-                <img src={createdDogs} className={styles.createdImg} />
-                <h1 className={styles.createdTitle}>The dog has been created</h1>
-            </div>}
-            {!created && <Form
-                infoNewDog={infoNewDog}
-                setInfoNewDog={setInfoNewDog}
-                tempsNewDog={tempsNewDog}
-                handleTemps={handleTemps}
-                setCreated={setCreated} />}
-            <DogCreated
-                name={infoNewDog.name}
-                temperament={tempsNewDog}
-                image={infoNewDog.image}
-                minHeight={infoNewDog.minHeight}
-                maxHeight={infoNewDog.maxHeight}
-                minWeight={infoNewDog.minWeight}
-                maxWeight={infoNewDog.maxWeight}
-                minLife={infoNewDog.minLife}
-                maxLife={infoNewDog.maxLife}
-                setCreated={setCreated}
-                handleDeleteTemp={handleDeleteTemp} />
-        </div>
+        window.innerWidth > 720 ?
+            <div className={styles.createDog}>
+                {created && <div className={styles.createdArea}>
+                    <img src={createdDogs} className={styles.createdImg} />
+                    <h1 className={styles.createdTitle}>The dog has been created</h1>
+                </div>}
+                {!created && <Form
+                    infoNewDog={infoNewDog}
+                    setInfoNewDog={setInfoNewDog}
+                    tempsNewDog={tempsNewDog}
+                    handleTemps={handleTemps}
+                    setCreated={setCreated} />}
+                <DogCreated
+                    name={infoNewDog.name}
+                    temperament={tempsNewDog}
+                    image={infoNewDog.image}
+                    minHeight={infoNewDog.minHeight}
+                    maxHeight={infoNewDog.maxHeight}
+                    minWeight={infoNewDog.minWeight}
+                    maxWeight={infoNewDog.maxWeight}
+                    minLife={infoNewDog.minLife}
+                    maxLife={infoNewDog.maxLife}
+                    setCreated={setCreated}
+                    handleDeleteTemp={handleDeleteTemp} />
+            </div> :
+            <CreateDogResponsive
+            infoNewDog={infoNewDog}
+            setInfoNewDog={setInfoNewDog}
+            tempsNewDog={tempsNewDog}
+            created={created}
+            handleTemps={handleTemps}
+            setCreated={setCreated}
+            handleDeleteTemp={handleDeleteTemp}
+            />
     )
 }

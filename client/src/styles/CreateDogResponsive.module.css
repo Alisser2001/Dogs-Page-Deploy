@@ -60,3 +60,13 @@
     border: 1px rgba(0, 0, 0, .5) solid;
     margin-bottom: 5vh;
 }
+
+.sideLeftButton{
+    display: none;
+}
+
+@media (max-width: 720px){
+    .sideLeftButton{
+        display: none;
+    }
+}

@@ -78,6 +78,66 @@
     margin: 0 1vw 5vh 1vw;
     font-weight: 100;
 }
-@media (max-width: 720px){
-    
+.sideLeftButton {
+    background-image: url("../icons/dogIcon.png");
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 80px;
+    margin: 2vh 0vw;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    cursor: pointer;
+}
+.sideTitle{
+    font-size: 4vw;
+    margin: 0vh 0vw;
+    font-weight: 100;
+}
+
+.changeSideArea {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .dogCreated {
+        width: 400px;
+    }
+
+    .backButton {
+        background-image: url("../icons/DogHome.png");
+        background-color: rgb(255, 255, 255);
+        background-size: 50px 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 80px;
+        margin: 2vh 0vw;
+    }
+    .backTitle{
+        font-size: 4vw;
+        margin: 0vh 0vw;
+    }
+
+    .backArea {
+        grid-area: CreateButton;
+        width: 200px;
+        margin: 2vh 0vw 0vh 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .changeSideArea {
+        position: absolute;
+        width: 200px;
+        margin: -15.3vh 0vw 0vh 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

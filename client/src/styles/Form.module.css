@@ -13,6 +13,7 @@
     font-family: "monocraft";
     font-weight: 100;
 }
+
 .form>div>h3 {
     margin: 1vh 0;
     font-size: 1.3vw;
@@ -20,6 +21,7 @@
     font-family: "monocraft";
     font-weight: 100;
 }
+
 .inputArea {
     display: flex;
     height: 5vh;
@@ -28,6 +30,7 @@
     justify-items: center;
     align-items: center;
 }
+
 .input {
     background-color: transparent;
     border-top: none;
@@ -37,6 +40,7 @@
     font-family: "monocraft";
     font-weight: 100;
 }
+
 .createArea {
     grid-area: CreateButton;
     width: 100%;
@@ -60,9 +64,11 @@
     margin: 0 0 5vh 1vw;
     cursor: pointer;
 }
+
 .createButton:hover {
     transform: scale(1.2);
 }
+
 .createTitle {
     margin: 2vh 0.5vw 1vh 0;
     font-size: 1.8vw;
@@ -71,14 +77,73 @@
     margin: 0 1vw 5vh 1vw;
     font-weight: 100;
 }
+
 .title {
     margin: 0 0 5vh 0;
     color: rgb(255, 255, 255);
     font-family: "monocraft";
 }
 
-@media (max-width: 720px){
-    .form{
+.sideRigthButton {
+    background-image: url("../icons/dogIcon.png");
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 80px;
+    margin: 2vh 0vw;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    cursor: pointer;
+}
+.sideTitle{
+    font-size: 4vw;
+    margin: 0vh 0vw;
+    font-weight: 100;
+}
+
+.changeSideArea {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .form {
         width: 400px;
+    }
+
+    .createButton {
+        background-image: url("../icons/AddDog.png");
+        background-color: rgb(255, 255, 255);
+        background-size: 50px 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 80px;
+        margin: 2vh 0vw;
+    }
+    .createTitle{
+        font-size: 4vw;
+        margin: 0vh 0vw;
+    }
+
+    .createArea {
+        grid-area: CreateButton;
+        width: 200px;
+        margin: 2vh 0vw 0vh 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .changeSideArea {
+        position: absolute;
+        width: 200px;
+        margin: -15.3vh 0vw 0vh 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

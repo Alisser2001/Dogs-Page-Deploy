@@ -65,8 +65,27 @@
     display: none;
 }
 
+.viewDogButton{
+    background-image: url("../icons/dogIcon.png");
+        background-color: rgb(255, 255, 255);
+        background-size: 50px 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 80px;
+        margin: 2vh 0vw;
+}
+.viewDogTitle{
+    font-size: 4vw;
+    margin: 0vh 0vw;
+    font-weight: 100;
+}
+
 @media (max-width: 720px){
-    .sideLeftButton{
-        display: none;
+    .createdImg{
+        width: 120px;
+        height: 180px;
+        max-width: 120px;
+        max-height: 180px;
     }
 }

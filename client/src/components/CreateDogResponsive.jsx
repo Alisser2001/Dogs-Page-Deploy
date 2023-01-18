@@ -24,6 +24,7 @@ export default function CreateDogResponsive({
                 <img src={createdDogs} className={styles.createdImg} />
                 <h1 className={styles.createdTitle}>The dog has been created</h1>
                 <a className={styles.viewDogButton} onClick={e=>handleViewCreated(e)}/>
+                <h3 className={styles.viewDogTitle}>View Dog</h3>
             </div>}
             {!created && <Form
                 infoNewDog={infoNewDog}

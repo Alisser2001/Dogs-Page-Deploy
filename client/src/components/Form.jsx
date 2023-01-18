@@ -171,7 +171,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
             </div>
             <div className={styles.backArea}>
                 <Link to="/home" className={styles.backButton} onClick={e => setCreated(false)} />
-                <h3 className={styles.backTitle}>Back to home</h3>
+                <h2 className={styles.backTitle}>Back to home</h2>
             </div>
         </form>
     )

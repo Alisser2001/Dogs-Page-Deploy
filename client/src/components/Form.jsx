@@ -38,7 +38,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
             setError({...error, temps: "Must choose at least one temperament"})
         }else {
             dispatch(postNewDog(newDog));
-            setCreated(true);
+            setViewCreated("created");
         }
     }
 

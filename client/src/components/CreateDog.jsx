@@ -34,10 +34,10 @@ export default function CreateDog() {
         }
     }
 
-    const setViewCreated=()=>{
+    const setViewCreated=(e)=>{
         e.preventDefault();
     }
-    
+
     const handleDeleteTemp = (e) => {
         e.preventDefault();
         let tempsSlice = tempsNewDog.filter(el => el !== e.target.value);

@@ -5,8 +5,9 @@ import InputForm from "./InputForm";
 import { postNewDog } from "../actions";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setCreated, handleSide }) {
+export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setCreated }) {
     const dispatch = useDispatch();
     const temperaments = useSelector(state => state.temps);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -168,9 +169,9 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                 <input type="submit" value=" " className={styles.createButton} />
                 <h2 className={styles.createTitle}>Create Dog</h2>
             </div>
-            <div className={styles.changeSideArea}>
-                <a className={styles.sideRigthButton} onClick={e => handleSide(e)} />
-                <h2 className={styles.sideTitle}>View Dog</h2>
+            <div className={styles.backArea}>
+                <Link to="/home" className={styles.backButton} onClick={e => setCreated(false)} />
+                <h3 className={styles.backTitle}>Back to home</h3>
             </div>
         </form>
     )

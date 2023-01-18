@@ -13,29 +13,26 @@ export default function CreateDogResponsive({
     setCreated,
     handleDeleteTemp
 }) {
-    const [sideCreate, setSideCreate] = useState("right");
-    const handleSide = (e) => {
+    const [viewCreated, setViewCreated] = useState(false);
+    const handleViewCreated = (e) => {
         e.preventDefault();
-        if (sideCreate === "right") {
-            setSideCreate("left")
-        } else if (sideCreate === "left") {
-            setSideCreate("right")
-        }
+        setViewCreated(!viewCreated)
     }
     return (
         <>
             {created && <div className={styles.createdArea}>
                 <img src={createdDogs} className={styles.createdImg} />
                 <h1 className={styles.createdTitle}>The dog has been created</h1>
+                <a className={styles.viewDogButton} onClick={e=>handleViewCreated(e)}/>
             </div>}
-            {sideCreate === "right" && <Form
+            {!created && <Form
                 infoNewDog={infoNewDog}
                 setInfoNewDog={setInfoNewDog}
                 tempsNewDog={tempsNewDog}
                 handleTemps={handleTemps}
                 setCreated={setCreated}
-                handleSide={handleSide} />}
-            {sideCreate === "left" && <DogCreated
+            />}
+            {viewCreated && <DogCreated
                 name={infoNewDog.name}
                 temperament={tempsNewDog}
                 image={infoNewDog.image}
@@ -47,7 +44,11 @@ export default function CreateDogResponsive({
                 maxLife={infoNewDog.maxLife}
                 setCreated={setCreated}
                 handleDeleteTemp={handleDeleteTemp}
-                handleSide={handleSide} />}
+            />}
         </>
     )
 }
+
+//Hacer el form de una sola pagina, con los botones para crear y para volver al home
+//Al crear el perro, cargar el componente con el aviso de que ha sido creado
+//El boton back to home y el boton view dog

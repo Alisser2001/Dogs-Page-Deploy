@@ -40,14 +40,14 @@ export default function Dog({
             <div className={styles.backArea}>
                 <Link to="/home" className={styles.backButton} onClick={e => {
                     e.preventDefault();
-                    setViewCreated("form")
+                    return setViewCreated("form");
                 }} />
                 <h3 className={styles.backTitle}>Back to home</h3>
             </div>
             <div className={styles.backFormArea}>
                 <Link to="/dog" className={styles.backFormButton} onClick={e => {
                     e.preventDefault();
-                    setViewCreated("form")
+                    return setViewCreated("form");
                 }} />
                 <h3 className={styles.backFormTitle}>Back to form</h3>
             </div>

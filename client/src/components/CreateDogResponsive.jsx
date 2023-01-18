@@ -8,7 +8,6 @@ export default function CreateDogResponsive({
     infoNewDog,
     setInfoNewDog,
     tempsNewDog,
-    created,
     handleTemps,
     setCreated,
     handleDeleteTemp
@@ -30,6 +29,7 @@ export default function CreateDogResponsive({
                 setInfoNewDog={setInfoNewDog}
                 tempsNewDog={tempsNewDog}
                 handleTemps={handleTemps}
+                setCreated={setCreated}
                 setViewCreated={setViewCreated}
             />}
             {viewCreated==="view" && <DogCreated

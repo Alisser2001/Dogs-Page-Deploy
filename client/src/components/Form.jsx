@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setViewCreated }) {
+export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setViewCreated, setCreated }) {
     const dispatch = useDispatch();
     const temperaments = useSelector(state => state.temps);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -17,6 +17,12 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
         weight: undefined,
         temps: undefined
     })
+    const handleSetCreated=(e)=>{
+        e.preventDefault();
+        if(window.innerWidth<=720){
+            setCreated(true);
+        }
+    }
     const submitNewDog = (data) => {
         const newDog = {
             "name": data.name.toString().trim(),
@@ -166,11 +172,13 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
             </div>
             {error.temps && <p>{error.temps}</p>}
             <div className={styles.createArea}>
-                <input type="submit" value=" " className={styles.createButton} />
+                <input type="submit" value=" " className={styles.createButton} onClick={e=>handleSetCreated(e)}/>
                 <h2 className={styles.createTitle}>Create Dog</h2>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} onClick={e => setViewCreated("form")} />
+                <Link to="/home" className={styles.backButton} onClick={e => {
+                    e.preventDefault();
+                    return setViewCreated("form")}} />
                 <h2 className={styles.backTitle}>Back to home</h2>
             </div>
         </form>

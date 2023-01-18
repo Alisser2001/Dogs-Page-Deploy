@@ -72,7 +72,6 @@ export default function CreateDog() {
             infoNewDog={infoNewDog}
             setInfoNewDog={setInfoNewDog}
             tempsNewDog={tempsNewDog}
-            created={created}
             handleTemps={handleTemps}
             setCreated={setCreated}
             handleDeleteTemp={handleDeleteTemp}

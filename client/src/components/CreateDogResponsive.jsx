@@ -28,13 +28,13 @@ export default function CreateDogResponsive({
                 <img src={createdDogs} className={styles.createdImg} />
                 <h1 className={styles.createdTitle}>The dog has been created</h1>
             </div>}
-            {sideCreate === "right" && <Form
+            {sideCreate === "right" && (!created && <Form
                 infoNewDog={infoNewDog}
                 setInfoNewDog={setInfoNewDog}
                 tempsNewDog={tempsNewDog}
                 handleTemps={handleTemps}
                 setCreated={setCreated}
-                handleSide={handleSide} />}
+                handleSide={handleSide} />)}
             {sideCreate === "left" && <DogCreated
                 name={infoNewDog.name}
                 temperament={tempsNewDog}

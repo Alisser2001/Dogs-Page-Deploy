@@ -121,7 +121,7 @@
     .buttonLabel{
         width: 20px;
         height: 24px;
-        margin: 0vh 0vw 2vh 2vw;
+        margin: 0vh 0vw 4vh 2vw;
     }
     .backButton {
         background-image: url("../icons/DogHome.png");

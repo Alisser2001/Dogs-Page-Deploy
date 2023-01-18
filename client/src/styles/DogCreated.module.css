@@ -108,7 +108,9 @@
     }
     .tempsArea{
         width: 400px;
-        place-items: center stretch;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .tempLabel{
         display: flex;

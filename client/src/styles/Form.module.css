@@ -110,6 +110,7 @@
 @media (max-width: 720px) {
     .form {
         width: 400px;
+        margin: 2vh 0vw;
     }
     .form>div>h3 {
         font-size: 4vw;

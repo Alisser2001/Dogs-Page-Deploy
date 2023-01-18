@@ -44,7 +44,7 @@ export default function Dog({
                 }} />
                 <h3 className={styles.backTitle}>Back to home</h3>
             </div>
-            <div className={styles.backFormArea}>.backFormButton
+            <div className={styles.backFormArea}>
                 <Link to="/dog" className={styles.backFormButton} onClick={e => {
                     e.preventDefault();
                     setViewCreated("form")

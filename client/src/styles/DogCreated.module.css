@@ -111,7 +111,7 @@
     .tempLabel{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 200px;
     }
     .backButton {
         background-image: url("../icons/DogHome.png");

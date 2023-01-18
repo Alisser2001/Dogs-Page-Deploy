@@ -13,27 +13,26 @@ export default function CreateDogResponsive({
     setCreated,
     handleDeleteTemp
 }) {
-    const [viewCreated, setViewCreated] = useState(false);
-    const handleViewCreated = (e) => {
-        e.preventDefault();
-        setViewCreated(!viewCreated)
-    }
+    const [viewCreated, setViewCreated] = useState("form");
     return (
         <>
-            {created && <div className={styles.createdArea}>
+            {viewCreated==="created" && <div className={styles.createdArea}>
                 <img src={createdDogs} className={styles.createdImg} />
                 <h1 className={styles.createdTitle}>The dog has been created</h1>
-                <a className={styles.viewDogButton} onClick={e=>handleViewCreated(e)}/>
+                <a className={styles.viewDogButton} onClick={e=>{
+                    e.preventDefault();
+                    setViewCreated("view")
+                }}/>
                 <h3 className={styles.viewDogTitle}>View Dog</h3>
             </div>}
-            {!created && <Form
+            {viewCreated==="form" && <Form
                 infoNewDog={infoNewDog}
                 setInfoNewDog={setInfoNewDog}
                 tempsNewDog={tempsNewDog}
                 handleTemps={handleTemps}
-                setCreated={setCreated}
+                setViewCreated={setViewCreated}
             />}
-            {viewCreated && <DogCreated
+            {viewCreated==="view" && <DogCreated
                 name={infoNewDog.name}
                 temperament={tempsNewDog}
                 image={infoNewDog.image}
@@ -45,7 +44,7 @@ export default function CreateDogResponsive({
                 maxLife={infoNewDog.maxLife}
                 setCreated={setCreated}
                 handleDeleteTemp={handleDeleteTemp}
-                handleViewCreated={handleViewCreated}
+                setViewCreated={setViewCreated}
             />}
         </>
     )

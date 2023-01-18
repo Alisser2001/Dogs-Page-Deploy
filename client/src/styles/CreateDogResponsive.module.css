@@ -51,7 +51,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.createdTitle{
+    color: white;
+}
 .createdImg {
     width: 25vw;
     height: 51vh;
@@ -69,6 +71,7 @@
     background-size: 50px 70px;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 50%;
     width: 60px;
     height: 80px;
     margin: 2vh 0vw;
@@ -86,7 +89,11 @@
         grid-area: none;
         position: absolute;
         width: 400px;
-        margin: 10vh 0vw;
+        margin: 20vh 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .createdImg {
         width: 120px;

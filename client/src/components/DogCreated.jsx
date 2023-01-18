@@ -1,7 +1,6 @@
 import React from "react";
 import styles from '../styles/DogCreated.module.css';
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 export default function Dog({
     name,
@@ -13,15 +12,9 @@ export default function Dog({
     minLife,
     maxLife,
     image,
-    setCreated,
-    handleDeleteTemp,
-    handleViewCreated
+    setViewCreated,
+    handleDeleteTemp
 }) {
-    const handle = (e) => {
-        e.preventDefault();
-        setCreated(false);
-        handleViewCreated(e);
-    }
     return (
         <div className={styles.dogCreated}>
             <h1 className={styles.createdTitle}>Dog Created:</h1>
@@ -45,11 +38,17 @@ export default function Dog({
                 </div>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} onClick={e => handle(e)} />
+                <Link to="/home" className={styles.backButton} onClick={e => {
+                    e.preventDefault();
+                    setViewCreated("form")
+                }} />
                 <h3 className={styles.backTitle}>Back to home</h3>
             </div>
             <div className={styles.backFormArea}>.backFormButton
-                <Link to="/dog" className={styles.backFormButton} onClick={e => handle(e)} />
+                <Link to="/dog" className={styles.backFormButton} onClick={e => {
+                    e.preventDefault();
+                    setViewCreated("form")
+                }} />
                 <h3 className={styles.backFormTitle}>Back to form</h3>
             </div>
         </div >

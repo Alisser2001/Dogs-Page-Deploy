@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setCreated }) {
+export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setViewCreated }) {
     const dispatch = useDispatch();
     const temperaments = useSelector(state => state.temps);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -170,7 +170,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                 <h2 className={styles.createTitle}>Create Dog</h2>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} onClick={e => setCreated(false)} />
+                <Link to="/home" className={styles.backButton} onClick={e => setViewCreated("form")} />
                 <h2 className={styles.backTitle}>Back to home</h2>
             </div>
         </form>

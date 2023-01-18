@@ -62,11 +62,8 @@
     margin-bottom: 5vh;
 }
 
-.sideLeftButton {
-    display: none;
-}
-
 .viewDogButton {
+    display: flex;
     background-image: url("../icons/dogIcon.png");
     background-color: rgb(255, 255, 255);
     background-size: 50px 70px;
@@ -80,6 +77,7 @@
 .viewDogTitle {
     font-size: 4vw;
     margin: 0vh 0vw;
+    color: white;
     font-weight: 100;
 }
 

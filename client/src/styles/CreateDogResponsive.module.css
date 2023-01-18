@@ -46,12 +46,13 @@
     list-style: none
 }
 
-.createdArea{
+.createdArea {
     grid-area: CreateDog;
     justify-content: center;
     align-items: center;
 }
-.createdImg{
+
+.createdImg {
     width: 25vw;
     height: 51vh;
     max-width: 25vw;
@@ -61,28 +62,35 @@
     margin-bottom: 5vh;
 }
 
-.sideLeftButton{
+.sideLeftButton {
     display: none;
 }
 
-.viewDogButton{
+.viewDogButton {
     background-image: url("../icons/dogIcon.png");
-        background-color: rgb(255, 255, 255);
-        background-size: 50px 70px;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 60px;
-        height: 80px;
-        margin: 2vh 0vw;
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 80px;
+    margin: 2vh 0vw;
 }
-.viewDogTitle{
+
+.viewDogTitle {
     font-size: 4vw;
     margin: 0vh 0vw;
     font-weight: 100;
 }
 
-@media (max-width: 720px){
-    .createdImg{
+@media (max-width: 720px) {
+    .createdArea{
+        grid-area: none;
+        position: absolute;
+        width: 400px;
+        margin: 10vh 0vw;
+    }
+    .createdImg {
         width: 120px;
         height: 180px;
         max-width: 120px;

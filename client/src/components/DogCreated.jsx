@@ -14,8 +14,14 @@ export default function Dog({
     maxLife,
     image,
     setCreated,
-    handleDeleteTemp
+    handleDeleteTemp,
+    handleViewCreated
 }) {
+    const handle = (e) => {
+        e.preventDefault();
+        setCreated(false);
+        handleViewCreated(e);
+    }
     return (
         <div className={styles.dogCreated}>
             <h1 className={styles.createdTitle}>Dog Created:</h1>
@@ -39,13 +45,13 @@ export default function Dog({
                 </div>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} onClick={e => setCreated(false)} />
+                <Link to="/home" className={styles.backButton} onClick={e => handle(e)} />
                 <h3 className={styles.backTitle}>Back to home</h3>
             </div>
             <div className={styles.backFormArea}>.backFormButton
-                <Link to="/dog" className={styles.backFormButton} onClick={e => setCreated(false)} />
+                <Link to="/dog" className={styles.backFormButton} onClick={e => handle(e)} />
                 <h3 className={styles.backFormTitle}>Back to form</h3>
             </div>
-        </div>
+        </div >
     )
 }

@@ -45,6 +45,7 @@ export default function CreateDogResponsive({
                 maxLife={infoNewDog.maxLife}
                 setCreated={setCreated}
                 handleDeleteTemp={handleDeleteTemp}
+                handleViewCreated={handleViewCreated}
             />}
         </>
     )

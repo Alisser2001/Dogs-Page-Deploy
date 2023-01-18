@@ -111,11 +111,16 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        align-items: center;
     }
     .tempLabel{
         display: flex;
         flex-direction: row;
-        width: 200px;
+        width: 190px;
+    }
+    .buttonLabel{
+        width: 10px;
+        height: 12px;
     }
     .backButton {
         background-image: url("../icons/DogHome.png");

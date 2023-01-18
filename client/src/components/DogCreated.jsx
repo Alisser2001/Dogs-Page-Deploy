@@ -17,7 +17,7 @@ export default function Dog({
 }) {
     const handle=(e)=>{
         e.preventDefault();
-        setViewCreated("form");
+        return setViewCreated("form");
     }
     return (
         <div className={styles.dogCreated}>

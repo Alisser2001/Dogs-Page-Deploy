@@ -34,6 +34,10 @@ export default function CreateDog() {
         }
     }
 
+    const setViewCreated=()=>{
+        e.preventDefault();
+    }
+    
     const handleDeleteTemp = (e) => {
         e.preventDefault();
         let tempsSlice = tempsNewDog.filter(el => el !== e.target.value);
@@ -54,7 +58,8 @@ export default function CreateDog() {
                     setInfoNewDog={setInfoNewDog}
                     tempsNewDog={tempsNewDog}
                     handleTemps={handleTemps}
-                    setCreated={setCreated} />}
+                    setCreated={setCreated}
+                    setViewCreated={setViewCreated} />}
                 <DogCreated
                     name={infoNewDog.name}
                     temperament={tempsNewDog}
@@ -66,7 +71,8 @@ export default function CreateDog() {
                     minLife={infoNewDog.minLife}
                     maxLife={infoNewDog.maxLife}
                     setCreated={setCreated}
-                    handleDeleteTemp={handleDeleteTemp} />
+                    handleDeleteTemp={handleDeleteTemp}
+                    setViewCreated={setViewCreated} />
             </div> :
             <CreateDogResponsive
             infoNewDog={infoNewDog}

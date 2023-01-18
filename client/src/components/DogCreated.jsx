@@ -15,6 +15,10 @@ export default function Dog({
     setViewCreated,
     handleDeleteTemp
 }) {
+    const handle=(e)=>{
+        e.preventDefault();
+        setViewCreated("form");
+    }
     return (
         <div className={styles.dogCreated}>
             <h1 className={styles.createdTitle}>Dog Created:</h1>
@@ -38,17 +42,11 @@ export default function Dog({
                 </div>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} onClick={e => {
-                    e.preventDefault();
-                    return setViewCreated("form");
-                }} />
+                <Link to="/home" className={styles.backButton} onClick={e => handle(e)} />
                 <h3 className={styles.backTitle}>Back to home</h3>
             </div>
             <div className={styles.backFormArea}>
-                <Link to="/dog" className={styles.backFormButton} onClick={e => {
-                    e.preventDefault();
-                    return setViewCreated("form");
-                }} />
+                <Link to="/dog" className={styles.backFormButton} onClick={e => handle(e)} />
                 <h3 className={styles.backFormTitle}>Back to form</h3>
             </div>
         </div >

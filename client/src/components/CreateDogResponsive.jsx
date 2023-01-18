@@ -22,14 +22,13 @@ export default function CreateDogResponsive({
             setSideCreate("right")
         }
     }
-    console.log(1 && 0 && 1)
     return (
         <>
             {created && <div className={styles.createdArea}>
                 <img src={createdDogs} className={styles.createdImg} />
                 <h1 className={styles.createdTitle}>The dog has been created</h1>
             </div>}
-            {sideCreate === "right" && !created && <Form
+            {sideCreate === "right" && <Form
                 infoNewDog={infoNewDog}
                 setInfoNewDog={setInfoNewDog}
                 tempsNewDog={tempsNewDog}

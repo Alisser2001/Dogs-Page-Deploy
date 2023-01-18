@@ -27,6 +27,7 @@
     grid-template-columns: 20vw 20vw;
     grid-template-rows: auto;
     justify-items: center;
+    align-items: center;
 }
 .tempLabel{
     display: flex;

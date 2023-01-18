@@ -108,6 +108,11 @@
     .tempsArea{
         width: 400px;
     }
+    .tempLabel{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
     .backButton {
         background-image: url("../icons/DogHome.png");
         background-color: rgb(255, 255, 255);

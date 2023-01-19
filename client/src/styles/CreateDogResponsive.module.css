@@ -46,12 +46,15 @@
     list-style: none
 }
 
-.createdArea{
+.createdArea {
     grid-area: CreateDog;
     justify-content: center;
     align-items: center;
 }
-.createdImg{
+.createdTitle{
+    color: white;
+}
+.createdImg {
     width: 25vw;
     height: 51vh;
     max-width: 25vw;
@@ -60,6 +63,27 @@
     border: 1px rgba(0, 0, 0, .5) solid;
     margin-bottom: 5vh;
 }
+
+.viewDogButton {
+    display: flex;
+    background-image: url("../icons/dogIcon.png");
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 60px;
+    height: 80px;
+    margin: 2vh 0vw;
+}
+
+.viewDogTitle {
+    font-size: 4vw;
+    margin: 0vh 0vw;
+    color: white;
+    font-weight: 100;
+}
+
 @media (max-width: 720px) {
     .createdArea{
         grid-area: none;
@@ -76,24 +100,5 @@
         height: 180px;
         max-width: 120px;
         max-height: 180px;
-    }
-    .viewDogButton {
-        display: flex;
-        background-image: url("../icons/dogIcon.png");
-        background-color: rgb(255, 255, 255);
-        background-size: 50px 70px;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        width: 60px;
-        height: 80px;
-        margin: 2vh 0vw;
-    }
-    
-    .viewDogTitle {
-        font-size: 4vw;
-        margin: 0vh 0vw;
-        color: white;
-        font-weight: 100;
     }
 }

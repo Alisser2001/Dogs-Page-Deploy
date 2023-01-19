@@ -1,13 +1,15 @@
-import styles from "../styles/Form.module.css";
+import styles from "../styles/FormResponsive.module.css";
 import { heightValidator, weightValidator, nameValidator, yearsValidator } from "./validators";
 import { useDispatch, useSelector } from "react-redux";
 import InputForm from "./InputForm";
 import { postNewDog } from "../actions";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
-export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setCreated }) {
+export default function FormResponsive({ infoNewDog, setInfoNewDog, tempsNewDog, handleTemps, setViewCreated }) {
     const dispatch = useDispatch();
+    const history = useHistory();
     const temperaments = useSelector(state => state.temps);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [error, setError] = useState({
@@ -16,6 +18,10 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
         weight: undefined,
         temps: undefined
     })
+    const handleToHome = (e) => {
+        setViewCreated("form");
+        history.push("/home")
+    }
     const submitNewDog = (data) => {
         const newDog = {
             "name": data.name.toString().trim(),
@@ -28,19 +34,18 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
         newDog["life_span"] = data.min_life_span + " - " + data.max_life_span + " years";
         newDog["temperament"] = tempsNewDog.join(", ");
         if (parseInt(newDog.minHeight) >= parseInt(newDog.maxHeight)) {
-            setError({...error, height: "The minimum height cannot be greater than the maximum height"});
+            setError({ ...error, height: "The minimum height cannot be greater than the maximum height" });
         } else if (parseInt(newDog.minWeight) >= parseInt(newDog.maxWeight)) {
-            setError({...error, weight: "The minimum weight cannot be greater than the maximum weight"});
+            setError({ ...error, weight: "The minimum weight cannot be greater than the maximum weight" });
         } else if (parseInt(data.min_life_span) >= parseInt(data.max_life_span)) {
-            setError({...error, years: "The minimum life expectancy cannot be greater than the maximum life expectancy"});
-        } else if(!tempsNewDog.length){
-            setError({...error, temps: "Must choose at least one temperament"})
-        }else {
+            setError({ ...error, years: "The minimum life expectancy cannot be greater than the maximum life expectancy" });
+        } else if (!tempsNewDog.length) {
+            setError({ ...error, temps: "Must choose at least one temperament" })
+        } else {
             dispatch(postNewDog(newDog));
-            setCreated(true);
+            setViewCreated("created");
         }
     }
-
     return (
         <form onSubmit={handleSubmit(submitNewDog)} className={styles.form}>
             <h1 className={styles.title}>Create your dog:</h1>
@@ -75,7 +80,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={yearsValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, years: undefined});
+                        setError({ ...error, years: undefined });
                         setInfoNewDog({ ...infoNewDog, minLife: e.target.value });
                     }}
                     register={register} />
@@ -87,7 +92,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={yearsValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, years: undefined});
+                        setError({ ...error, years: undefined });
                         setInfoNewDog({ ...infoNewDog, maxLife: e.target.value })
                     }}
                     register={register} />
@@ -103,7 +108,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={heightValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, height: undefined});
+                        setError({ ...error, height: undefined });
                         setInfoNewDog({ ...infoNewDog, minHeight: e.target.value })
                     }}
                     register={register} />
@@ -115,7 +120,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={heightValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, height: undefined});
+                        setError({ ...error, height: undefined });
                         setInfoNewDog({ ...infoNewDog, maxHeight: e.target.value })
                     }}
                     register={register} />
@@ -131,7 +136,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={weightValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, weight: undefined});
+                        setError({ ...error, weight: undefined });
                         setInfoNewDog({ ...infoNewDog, minWeight: e.target.value })
                     }}
                     register={register} />
@@ -143,7 +148,7 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                     validate={weightValidator}
                     onChange={e => {
                         e.preventDefault();
-                        setError({...error, weight: undefined});
+                        setError({ ...error, weight: undefined });
                         setInfoNewDog({ ...infoNewDog, maxWeight: e.target.value })
                     }}
                     register={register} />
@@ -152,10 +157,11 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
             {error.weight && <p>{error.weight}</p>}
             <div className={styles.inputArea}>
                 <label>Temperaments: </label>
-                <select onChange={e => { 
+                <select onChange={e => {
                     e.preventDefault();
-                    setError({...error, temps: undefined}); 
-                    handleTemps(e) }} className={styles.input}>
+                    setError({ ...error, temps: undefined });
+                    handleTemps(e)
+                }} className={styles.input}>
                     {temperaments && temperaments.map((temp, index) => {
                         return (
                             <option value={temp?.name} key={index}>{temp?.name}</option>
@@ -164,9 +170,15 @@ export default function Form({ infoNewDog, setInfoNewDog, tempsNewDog, handleTem
                 </select>
             </div>
             {error.temps && <p>{error.temps}</p>}
-            <div className={styles.createArea}>
-                <input type="submit" value=" " className={styles.createButton}/>
-                <h2 className={styles.createTitle}>Create Dog</h2>
+            <div className={styles.buttonsArea}>
+                <div className={styles.createArea}>
+                    <input type="submit" value=" " className={styles.createButton} />
+                    <h2 className={styles.createTitle}>Create Dog</h2>
+                </div>
+                <div className={styles.backArea}>
+                    <a className={styles.backButton} onClick={e => handleToHome(e)} />
+                    <h2 className={styles.backTitle}>Back to home</h2>
+                </div>
             </div>
         </form>
     )

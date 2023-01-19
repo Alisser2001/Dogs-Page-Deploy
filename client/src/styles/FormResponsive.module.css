@@ -1,11 +1,10 @@
 .form {
-    grid-area: CreateDog;
     grid-template-rows: auto;
     grid-template-areas:
         "Form"
-        "CreateButton";
-    width: 40vw;
-    margin: 5vh 0vw;
+        "Buttons";
+    width: 400px;
+    margin: 2vh 0vw 2vh 50vw;
     padding: 5vh 0;
     border-radius: 2vw;
     background-color: rgba(0, 0, 0, .5);
@@ -16,7 +15,7 @@
 
 .form>div>h3 {
     margin: 1vh 0;
-    font-size: 1.3vw;
+    font-size: 4vw;
     color: rgb(255, 255, 255);
     font-family: "monocraft";
     font-weight: 100;
@@ -41,28 +40,33 @@
     font-weight: 100;
 }
 
-.createArea {
-    grid-area: CreateButton;
-    width: 100%;
-    margin: 4vh 0 0 0;
+.buttonsArea{
+    grid-area: Buttons;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+
+.createArea {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    margin: 0vh 0vw 0vh 0vw;
 }
 
 .createButton {
     background-image: url("../icons/AddDog.png");
     background-color: rgb(255, 255, 255);
-    background-size: 4vw 9vh;
+    background-size: 50px 70px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 1px rgb(0, 0, 0) solid;
-    width: 6vw;
-    height: 12vh;
-    margin: 0 0 5vh 1vw;
     cursor: pointer;
+    width: 60px;
+    height: 80px;
+    margin: 2vh 0vw;
 }
 
 .createButton:hover {
@@ -70,12 +74,12 @@
 }
 
 .createTitle {
-    margin: 2vh 0.5vw 1vh 0;
-    font-size: 1.8vw;
+    margin: 0vh 0vw 0vh 0;
     color: rgb(255, 255, 255);
     font-family: "monocraft";
-    margin: 0 1vw 5vh 1vw;
     font-weight: 100;
+    font-size: 4vw;
+    margin: 0vh 0vw;
 }
 
 .title {
@@ -92,17 +96,24 @@
     background-repeat: no-repeat;
     width: 60px;
     height: 80px;
-    margin: 2vh 0vw 2vh 0vw;
+    margin: 2vh 0vw;
     border-radius: 50%;
     border: 1px rgb(0, 0, 0) solid;
     cursor: pointer;
 }
-.backTitle{
+
+.backTitle {
     font-size: 4vw;
     margin: 0vh 0vw;
     font-weight: 100;
 }
 
 .backArea {
-    display: none;
+    position: absolute;
+    width: 200px;
+    margin: 0vh 0vw 0vh 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

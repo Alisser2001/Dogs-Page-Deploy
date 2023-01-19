@@ -1,6 +1,6 @@
 import React from "react";
-import styles from '../styles/DogCreated.module.css';
-import { Link } from "react-router-dom";
+import styles from '../styles/DogCreatedResponsive.module.css';
+import { useHistory } from "react-router-dom";
 
 export default function Dog({
     name,
@@ -12,8 +12,19 @@ export default function Dog({
     minLife,
     maxLife,
     image,
-    handleDeleteTemp
+    handleDeleteTemp,
+    setViewCreated
 }) {
+    const history = useHistory();
+    const handleToForm=(e)=>{
+        if(e==="home"){
+            setViewCreated("form");
+            history.push("/home")
+        } else if(e==="form"){
+            setViewCreated("form");
+            history.push("/dog")
+        }
+    }
     return (
         <div className={styles.dogCreated}>
             <h1 className={styles.createdTitle}>Dog Created:</h1>
@@ -37,8 +48,12 @@ export default function Dog({
                 </div>
             </div>
             <div className={styles.backArea}>
-                <Link to="/home" className={styles.backButton} />
+                <a className={styles.backButton} onClick={e=>handleToForm("home")}/>
                 <h3 className={styles.backTitle}>Back to home</h3>
+            </div>
+            <div className={styles.backFormArea}>
+                <a className={styles.backFormButton} onClick={e=>handleToForm("form")}/>
+                <h3 className={styles.backFormTitle}>Back to form</h3>
             </div>
         </div >
     )

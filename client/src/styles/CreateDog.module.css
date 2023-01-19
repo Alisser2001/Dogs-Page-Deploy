@@ -75,10 +75,11 @@
         align-items: center;
     }
     .createdImg {
-        width: 120px;
+        width: 140px;
         height: 180px;
-        max-width: 120px;
+        max-width: 140px;
         max-height: 180px;
+        margin-bottom: 2vh;
     }
     .viewDogButton {
         display: flex;

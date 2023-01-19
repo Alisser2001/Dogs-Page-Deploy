@@ -42,7 +42,6 @@
 
 .buttonsArea{
     grid-area: Buttons;
-    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -54,7 +53,6 @@
     align-items: center;
     width: 200px;
     margin: 0vh 0vw 0vh 0vw;
-    position: absolute;
 }
 
 .createButton {
@@ -111,7 +109,6 @@
 }
 
 .backArea {
-    position: absolute;
     width: 200px;
     margin: 0vh 0vw 0vh 50vw;
     display: flex;

@@ -51,6 +51,9 @@
     justify-content: center;
     align-items: center;
 }
+.createdTitle{
+    color: white;
+}
 .createdImg{
     width: 25vw;
     height: 51vh;

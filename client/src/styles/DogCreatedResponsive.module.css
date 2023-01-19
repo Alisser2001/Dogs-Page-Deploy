@@ -151,7 +151,6 @@
     }
 
     .backFormArea {
-        position: absolute;
         width: 200px;
         margin: -15.4vh 0vw 0vh 50vw;
         display: flex;

@@ -2,9 +2,6 @@ require('dotenv').config();
 const { Sequelize } = require("sequelize-cockroachdb");
 const fs = require('fs');
 const path = require('path');
-const {
-  DATABASE_URL
-} = process.env;
 
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   logging: false, // set to console.log to see the raw SQL queries

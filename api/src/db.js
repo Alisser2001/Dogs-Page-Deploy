@@ -6,6 +6,13 @@ const path = require('path');
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+  ssl: true, // Habilita SSL/TLS
+  dialectOptions: {
+    ssl: {
+      require: true, // Requiere SSL/TLS
+      rejectUnauthorized: false // Esto evita errores relacionados con autoridades no confiables, pero ten cuidado en producción.
+    }
+  }
 });
 const basename = path.basename(__filename);
 

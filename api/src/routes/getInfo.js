@@ -14,7 +14,7 @@ const getApiInfo = async () => {
             minWeight: dog.weight.metric.split(" - ")[0],
             maxWeight: dog.weight.metric.split(" - ")[1],
             life_span: dog.life_span,
-            image: dog.image.url,
+            image: `https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg`,
             temperament: dog.temperament
         }
     });

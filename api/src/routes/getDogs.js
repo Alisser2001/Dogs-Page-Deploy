@@ -13,6 +13,7 @@ const getDog = async (req, res) => {
             return res.status(200).send(allDogs)
         }
     } catch (err) {
+        console.log(err)
         return res.status(404).send(err);
     }
 }
